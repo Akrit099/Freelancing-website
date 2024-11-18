@@ -1,0 +1,117 @@
+/* Know More Section */
+.know-more {
+    padding: 50px 10%;
+    background: linear-gradient(180deg, #eefff9, #ffccc1);
+}
+
+.know-more-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.know-more h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.know-more p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.feature {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #000;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.testimonials {
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-style: normal;
+    color: #999;
+}
+
+.btn-dark {
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 25px;
+    border: 0;
+    outline: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.btn-dark:hover {
+    background: #333;
+}
+
+/* Responsive Design for Know More */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+    .know-more h2 {
+        font-size: 2rem;
+    }
+
+    .know-more p {
+        font-size: 1.1rem;
+    }
+
+    .btn-dark {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}

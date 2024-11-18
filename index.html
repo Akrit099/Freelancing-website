@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Create Collab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <nav>
+        <img src="ps3.PNG" alt="logo" class="logo">
+        <ul id="menu-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+        </ul>
+        <button class="nav-btn"><a href="SignUp.html">Get Started </a><img src="ps5.png" alt=""></button>
+
+        <img src="ps7.png" alt="" class="menu-icon" onclick="toogleMenu()">
+    </nav>
+
+    <div class="header">
+        <div class="header-content">
+            <h1><span>FREE</span><br><span>LANCER</span></h1>
+        <div class="btn-container">
+            <button class="btn-dark">Request Call Back <img src="ps4.webp" alt=""></button>
+            <button class="btn-light"><a href="Know-more.html">Know More </a><img src="ps5.png" alt=""></button>
+        </div>
+        <p>Passionate UI/UX desiners with 10+ years of experience.</p>
+        </div>
+        <img src="ps6.png" alt="" class="user-img">
+    </div>
+
+    <script>
+        let navbar = document.querySelector('nav');
+        let menuLinks = document.getElementById("menu-links");
+
+        function toogleMenu(){
+            menuLinks.classList.toggle('show-menu');
+        }
+
+        window.onscroll = function(){
+            if(window.scrollY > 0){
+                navbar.style.background = '#eefff9';
+            }else{
+                navbar.style.background = 'transparent';
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
